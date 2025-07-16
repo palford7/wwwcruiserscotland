@@ -43,18 +43,20 @@
       color: #111;
     }
     .iframe-container {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 20px;
-      max-width: 800px;
       margin: 0 auto 2em auto;
     }
     iframe {
-      width: 100%;
-      height: 400px;
+      width: 300px;
+      height: 80px;
       border: none;
       border-radius: 8px;
       overflow: hidden;
+      background-color: transparent;
+      color: #fff;
     }
     footer {
       margin-top: 3em;
@@ -78,10 +80,10 @@
 
   <h2>Live Subscriber & Follower Counts</h2>
   <div class="iframe-container">
-    <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/tiktok-live-follower-counter/land.cruiser.scotland style="border: 0; width:300px; height:80px;"></iframe>
-    <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/youtube-live-subscriber-counter/UCL86hWnpRV02kEFf-Ano0VQ style="border: 0; width:300px; height:80px;"></iframe>
-    <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/tiktok-live-follower-counter/land.cruiser.scotland style="border: 0; width:300px; height:80px;"></iframe>
-    <iframe height="80px" width="300px" frameborder="0" src=https://livecounts.io/embed/tiktok-live-follower-counter/steven_mcconnell_313 style="border: 0; width:300px; height:80px;"></iframe>
+    <iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/land.cruiser.scotland"></iframe>
+    <iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCL86hWnpRV02kEFf-Ano0VQ"></iframe>
+    <iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCEN7CJS5VY-sZ3hUpgD5UTw"></iframe>
+    <iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/steven_mcconnell_313"></iframe>
   </div>
 
   <footer>
