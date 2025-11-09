@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cruiser Scotland</title>
 
-    <!-- Favicons -->
+  <!-- Favicons -->
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -17,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
-  
+
   <style>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,23 +24,23 @@
       background-color: #111;
       color: #fff;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
       margin: 0;
     }
 
     h1, h2 {
       font-weight: 900;
+      margin: 0.4em 0;
     }
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0.2em;
     }
 
     p {
       font-size: 1.2em;
-      margin-bottom: 2em;
       color: #ccc;
+      margin-bottom: 2em;
     }
 
     .logo {
@@ -60,7 +59,7 @@
     }
 
     a.button {
-      height: 40px;
+      height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -78,13 +77,10 @@
     }
 
     table.iframe-table {
-      margin: 0 auto 2em auto;
+      margin: 0 auto 3em auto;
       border-spacing: 0;
       background-color: #fff;
-    }
-
-    table.iframe-table tr {
-      background-color: #fff;
+      border-radius: 8px;
     }
 
     table.iframe-table td {
@@ -92,37 +88,39 @@
     }
 
     iframe {
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
       height: 80px;
       border: none;
       border-radius: 8px;
       overflow: hidden;
     }
 
+    .instagram-footer {
+      margin: 3em auto;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .instagram-footer > div {
+      max-width: 400px;
+      width: 100%;
+    }
+
     footer {
-      margin-top: 3em;
+      margin-top: 2em;
       font-size: 0.9em;
       color: #777;
     }
 
-    .content-columns {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 3em;
-    }
-
-    .left-column, .right-column {
-      max-width: 420px;
-      flex: 1;
-    }
-
-    @media (max-width: 900px) {
-      .content-columns {
-        flex-direction: column;
-        align-items: center;
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      iframe {
+        height: 70px;
       }
     }
   </style>
@@ -133,36 +131,32 @@
   <h1>Cruiser Scotland</h1>
   <p>Scottish car culture, Land Cruisers, track projects & more.</p>
 
-  <div class="content-columns">
-    <!-- Left: Instagram Feed -->
-    <div class="left-column">
-      <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-2c0e7604-adb9-41c5-86e7-376f75d61d0e" data-elfsight-app-lazy></div>
-    </div>
+  <div class="button-grid">
+    <a class="button" href="https://www.youtube.com/@landcruiserscotland" target="_blank">Land Cruiser Scotland YouTube</a>
+    <a class="button" href="https://www.instagram.com/landcruiserscotland/" target="_blank">Land Cruiser Scotland Instagram</a>
+    <a class="button" href="https://www.tiktok.com/@land.cruiser.scotland" target="_blank">Land Cruiser Scotland TikTok</a>
+    <a class="button" href="https://www.youtube.com/@vperformance" target="_blank">vPerformance YouTube</a>
+    <a class="button" href="https://www.instagram.com/vperformance/" target="_blank">vPerformance Instagram</a>
+    <a class="button" href="mailto:paul@cruiserscotland.com">Email Us</a>
+  </div>
 
-    <!-- Right: Buttons + Follower Counts -->
-    <div class="right-column">
-      <div class="button-grid">
-        <a class="button" href="https://www.youtube.com/@landcruiserscotland" target="_blank">Land Cruiser Scotland YouTube</a>
-        <a class="button" href="https://www.instagram.com/landcruiserscotland/" target="_blank">Land Cruiser Scotland Instagram</a>
-        <a class="button" href="https://www.tiktok.com/@land.cruiser.scotland" target="_blank">Land Cruiser Scotland TikTok</a>
-        <a class="button" href="https://www.youtube.com/@vperformance" target="_blank">vPerformance YouTube</a>
-        <a class="button" href="https://www.instagram.com/vperformance/" target="_blank">vPerformance Instagram</a>
-        <a class="button" href="mailto:paul@cruiserscotland.com">Email Us</a>
-      </div>
+  <h2>Live Subscriber & Follower Counts</h2>
+  <table class="iframe-table">
+    <tr><td><iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/land.cruiser.scotland"></iframe></td></tr>    
+    <tr><td><iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCAiQ_6LnMoKR6rYTIK5hwAg"></iframe></td></tr>
+    <tr><td><iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCL86hWnpRV02kEFf-Ano0VQ"></iframe></td></tr>
+    <!-- <tr><td><iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/steven_mcconnell_313"></iframe></td></tr> -->
+  </table>
 
-      <h2>Live Subscriber & Follower Counts</h2>
-      <table class="iframe-table">
-        <tr><td><iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/land.cruiser.scotland"></iframe></td></tr>    
-        <tr><td><iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCAiQ_6LnMoKR6rYTIK5hwAg"></iframe></td></tr>
-        <tr><td><iframe src="https://livecounts.io/embed/youtube-live-subscriber-counter/UCL86hWnpRV02kEFf-Ano0VQ"></iframe></td></tr>
-        <!-- <tr><td><iframe src="https://livecounts.io/embed/tiktok-live-follower-counter/steven_mcconnell_313"></iframe></td></tr> -->
-      </table>
-    </div>
+  <!-- Instagram Feed moved to bottom -->
+  <div class="instagram-footer">
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-2c0e7604-adb9-41c5-86e7-376f75d61d0e" data-elfsight-app-lazy></div>
   </div>
 
   <footer>
     &copy; 2025 Cruiser Media Ltd. All rights reserved.
   </footer>
+
 </body>
 </html>
